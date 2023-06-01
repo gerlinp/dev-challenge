@@ -1,6 +1,8 @@
 :root {
   --brand-color: #00945f;
   --secondary: #759b24;
+  --accent-color: #e97300;
+  --highlight-color: #ebf7f5;
 }
 
 * {
@@ -23,7 +25,7 @@ a {
   display: flex;
   width: 155px;
   text-align: center;
-  background: #e97300;
+  background: var(--accent-color);
   color: #fff;
   margin: 50px auto;
   height: 40px;
@@ -49,13 +51,13 @@ header {
 #hero {
   width: 100%;
   height: 200px;
-  background-image: url('../css/images/Layer50.png');
+  background-image: url('../css/images/hero.png');
   background-size: 615px;
   background-position: 0% 40%;
 }
 
 main {
-  margin: 15px;
+  margin: 20px;
 
   .subtitle {
     h2 {
@@ -102,6 +104,64 @@ main {
     }
     img {
       margin-left: 5px;
+    }
+  }
+}
+
+#solutions {
+  #solutions-about {
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      background: var(--brand-color);
+      text-align: center;
+      color: #fff;
+      line-height: 35px;
+      padding: 15px;
+      font-size: 1.25rem;
+      font-weight: lighter;
+    }
+
+    .bottom {
+      margin: 0;
+      background: var(--highlight-color);
+      padding: 0px 10px;
+    }
+  }
+
+  #officers {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    p {
+      text-align: center;
+    }
+
+    .officer-quote {
+      position: relative;
+      font-style: italic;
+      z-index: 2;
+    }
+
+    .officer-signature {
+      position: relative;
+      color: #29ae8d;
+      font-weight: normal;
+      z-index: 2;
+    }
+
+    .quote-container {
+      position: relative;
+      width: 180px;
+    }
+    .quote-symbol {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
   }
 }

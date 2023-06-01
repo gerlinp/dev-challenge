@@ -2,15 +2,17 @@
 :root {
   --brand-color: #00945f;
   --secondary: #759b24;
+  --accent-color: #e97300;
+  --highlight-color: #ebf7f5;
 }
 
-/* line 6, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 8, ../Code/Radancy-Test00/scss/styles.scss */
 * {
   box-sizing: border-box;
   font-family: 'Arial';
 }
 
-/* line 11, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 13, ../Code/Radancy-Test00/scss/styles.scss */
 p {
   line-height: 30px;
   text-align: left;
@@ -18,17 +20,17 @@ p {
   font-size: 1rem;
 }
 
-/* line 18, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 20, ../Code/Radancy-Test00/scss/styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 22, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 24, ../Code/Radancy-Test00/scss/styles.scss */
 .btn {
   display: flex;
   width: 155px;
   text-align: center;
-  background: #e97300;
+  background: var(--accent-color);
   color: #fff;
   margin: 50px auto;
   height: 40px;
@@ -37,39 +39,39 @@ a {
   font-size: 1.25rem;
 }
 
-/* line 33, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 35, ../Code/Radancy-Test00/scss/styles.scss */
 .btn a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 39, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 41, ../Code/Radancy-Test00/scss/styles.scss */
 header {
   display: flex;
   justify-content: center;
 }
 
-/* line 43, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 45, ../Code/Radancy-Test00/scss/styles.scss */
 header img {
   max-width: 62vw;
   margin: 25px 0;
 }
 
-/* line 49, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 51, ../Code/Radancy-Test00/scss/styles.scss */
 #hero {
   width: 100%;
   height: 200px;
-  background-image: url("../css/images/Layer50.png");
+  background-image: url("../css/images/hero.png");
   background-size: 615px;
   background-position: 0% 40%;
 }
 
-/* line 57, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 59, ../Code/Radancy-Test00/scss/styles.scss */
 main {
-  margin: 15px;
+  margin: 20px;
 }
 
-/* line 61, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 63, ../Code/Radancy-Test00/scss/styles.scss */
 main .subtitle h2 {
   text-align: center;
   font-weight: lighter;
@@ -78,7 +80,7 @@ main .subtitle h2 {
   margin: 0;
 }
 
-/* line 68, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 70, ../Code/Radancy-Test00/scss/styles.scss */
 main .subtitle ::after {
   content: '';
   display: block;
@@ -88,18 +90,18 @@ main .subtitle ::after {
   border-bottom: 2px solid var(--brand-color);
 }
 
-/* line 80, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 82, ../Code/Radancy-Test00/scss/styles.scss */
 #features p {
   margin: 5px auto;
 }
 
-/* line 83, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 85, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature {
   padding-bottom: 20px;
   border-bottom: 1.5px solid #c2c2c2;
 }
 
-/* line 87, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 89, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature-subtitle {
   color: var(--brand-color);
   font-weight: lighter;
@@ -107,26 +109,92 @@ main .subtitle ::after {
   font-size: 1.35rem;
 }
 
-/* line 93, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 95, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link {
   align-items: center;
   display: flex;
 }
 
-/* line 96, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 98, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link a {
   color: var(--secondary);
   text-decoration: none;
 }
 
-/* line 99, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 101, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link a :visited {
   color: inherit;
 }
 
-/* line 103, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 105, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link img {
   margin-left: 5px;
+}
+
+/* line 112, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #solutions-about {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 116, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #solutions-about .top {
+  background: var(--brand-color);
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+  padding: 15px;
+  font-size: 1.25rem;
+  font-weight: lighter;
+}
+
+/* line 126, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #solutions-about .bottom {
+  margin: 0;
+  background: var(--highlight-color);
+  padding: 0px 10px;
+}
+
+/* line 133, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #officers {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* line 139, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #officers p {
+  text-align: center;
+}
+
+/* line 143, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #officers .officer-quote {
+  position: relative;
+  font-style: italic;
+  z-index: 2;
+}
+
+/* line 149, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #officers .officer-signature {
+  position: relative;
+  color: #29ae8d;
+  font-weight: normal;
+  z-index: 2;
+}
+
+/* line 156, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #officers .quote-container {
+  position: relative;
+  width: 180px;
+}
+
+/* line 160, ../Code/Radancy-Test00/scss/styles.scss */
+#solutions #officers .quote-symbol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
