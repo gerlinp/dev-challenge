@@ -4,28 +4,29 @@
   --secondary: #759b24;
   --accent-color: #e97300;
   --highlight-color: #ebf7f5;
+  --border: #888888;
 }
 
-/* line 8, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 9, ../Code/Radancy-Test00/scss/styles.scss */
 * {
   box-sizing: border-box;
   font-family: 'Arial';
 }
 
-/* line 13, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 14, ../Code/Radancy-Test00/scss/styles.scss */
 p {
   line-height: 30px;
   text-align: left;
-  color: #888888;
+  color: var(--border);
   font-size: 1rem;
 }
 
-/* line 20, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 21, ../Code/Radancy-Test00/scss/styles.scss */
 a {
   text-decoration: none;
 }
 
-/* line 24, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 25, ../Code/Radancy-Test00/scss/styles.scss */
 .btn {
   display: flex;
   width: 155px;
@@ -39,25 +40,34 @@ a {
   font-size: 1.25rem;
 }
 
-/* line 35, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 38, ../Code/Radancy-Test00/scss/styles.scss */
 .btn a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 41, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 43, ../Code/Radancy-Test00/scss/styles.scss */
 header {
   display: flex;
   justify-content: center;
 }
 
-/* line 45, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 47, ../Code/Radancy-Test00/scss/styles.scss */
 header img {
-  max-width: 62vw;
+  width: 62vw;
+  max-width: 315px;
   margin: 25px 0;
 }
 
-/* line 51, ../Code/Radancy-Test00/scss/styles.scss */
+@media (min-width: 767px) {
+  /* line 43, ../Code/Radancy-Test00/scss/styles.scss */
+  header {
+    justify-content: start;
+    margin: 20px;
+  }
+}
+
+/* line 59, ../Code/Radancy-Test00/scss/styles.scss */
 #hero {
   width: 100%;
   height: 200px;
@@ -66,18 +76,27 @@ header img {
   background-position: 0% 40%;
 }
 
-/* line 59, ../Code/Radancy-Test00/scss/styles.scss */
+@media (min-width: 767px) {
+  /* line 59, ../Code/Radancy-Test00/scss/styles.scss */
+  #hero {
+    height: 450px;
+    background-size: cover;
+    background-image: url("../css/images/hero-desktop.png");
+  }
+}
+
+/* line 73, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container {
   border-bottom: 1px solid var(--brand-color);
   padding-bottom: 30px;
 }
 
-/* line 62, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 77, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container #main-content {
   margin: 20px;
 }
 
-/* line 65, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 81, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container #main-content .subtitle h2 {
   text-align: center;
   font-weight: lighter;
@@ -86,28 +105,28 @@ header img {
   margin: 0;
 }
 
-/* line 72, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 88, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container #main-content .subtitle ::after {
   content: '';
   display: block;
   margin: 0 auto;
-  width: 25%;
+  width: 70px;
   padding-top: 15px;
   border-bottom: 2px solid var(--brand-color);
 }
 
-/* line 85, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 101, ../Code/Radancy-Test00/scss/styles.scss */
 #features p {
   margin: 5px auto;
 }
 
-/* line 88, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 105, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature {
   padding-bottom: 20px;
   border-bottom: 1.5px solid #c2c2c2;
 }
 
-/* line 92, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 110, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature-subtitle {
   color: var(--brand-color);
   font-weight: lighter;
@@ -115,35 +134,64 @@ header img {
   font-size: 1.35rem;
 }
 
-/* line 98, ../Code/Radancy-Test00/scss/styles.scss */
-#features .product-link {
+/* line 117, ../Code/Radancy-Test00/scss/styles.scss */
+#features a.product-link {
   align-items: center;
   display: flex;
-}
-
-/* line 101, ../Code/Radancy-Test00/scss/styles.scss */
-#features .product-link a {
   color: var(--secondary);
   text-decoration: none;
 }
 
-/* line 104, ../Code/Radancy-Test00/scss/styles.scss */
-#features .product-link a :visited {
-  color: inherit;
+/* line 123, ../Code/Radancy-Test00/scss/styles.scss */
+#features a.product-link:visited {
+  color: var(--secondary);
 }
 
-/* line 108, ../Code/Radancy-Test00/scss/styles.scss */
-#features .product-link img {
+/* line 127, ../Code/Radancy-Test00/scss/styles.scss */
+#features a.product-link img {
   margin-left: 5px;
 }
 
-/* line 115, ../Code/Radancy-Test00/scss/styles.scss */
+@media (min-width: 1023px) {
+  /* line 133, ../Code/Radancy-Test00/scss/styles.scss */
+  #features .features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  /* line 139, ../Code/Radancy-Test00/scss/styles.scss */
+  #features .feature {
+    border: none;
+    position: relative;
+    margin-top: 35px;
+  }
+  /* line 143, ../Code/Radancy-Test00/scss/styles.scss */
+  #features .feature p {
+    margin: 0px 10px 50px 0px;
+  }
+  /* line 147, ../Code/Radancy-Test00/scss/styles.scss */
+  #features .feature:nth-child(odd)::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    height: 60%;
+    width: 1px;
+    background-color: var(--border);
+  }
+  /* line 156, ../Code/Radancy-Test00/scss/styles.scss */
+  #features .feature:nth-child(even) {
+    margin-left: 20px;
+  }
+}
+
+/* line 164, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about {
   display: flex;
   flex-direction: column;
 }
 
-/* line 119, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 168, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about .top {
   background: var(--brand-color);
   text-align: center;
@@ -153,30 +201,56 @@ header img {
   font-weight: lighter;
 }
 
-/* line 128, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 177, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about .bottom {
   margin: 0;
   background: var(--highlight-color);
   padding: 0px 10px;
 }
 
-/* line 135, ../Code/Radancy-Test00/scss/styles.scss */
+@media (min-width: 768px) {
+  /* line 177, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #solutions-about .bottom {
+    padding: 0px 50px;
+  }
+}
+
+/* line 188, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers {
   margin-top: 30px;
   display: flex;
   text-align: center;
   justify-content: center;
+  flex-direction: column;
+  align-content: center;
   flex-wrap: wrap;
 }
 
-/* line 142, ../Code/Radancy-Test00/scss/styles.scss */
+@media (min-width: 1024px) {
+  /* line 188, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /* line 202, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers .officer-variant .quote-container {
+    width: 400px;
+  }
+  /* line 205, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers .officer-variant .officer-signature {
+    margin: 16px auto;
+    width: 185px;
+  }
+}
+
+/* line 212, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers p {
   font-size: 1rem;
   text-align: center;
   line-height: 30px;
 }
 
-/* line 148, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 218, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-quote {
   margin: 0;
   position: relative;
@@ -185,7 +259,7 @@ header img {
   word-wrap: break-word;
 }
 
-/* line 156, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 226, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-signature {
   position: relative;
   color: #29ae8d;
@@ -193,13 +267,13 @@ header img {
   z-index: 2;
 }
 
-/* line 163, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 233, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-container {
   position: relative;
   width: 185px;
 }
 
-/* line 167, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 238, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-symbol {
   position: absolute;
   top: 0;
@@ -207,31 +281,31 @@ header img {
   z-index: 1;
 }
 
-/* line 176, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 247, ../Code/Radancy-Test00/scss/styles.scss */
 footer {
   margin: 20px;
   padding-bottom: 15px;
 }
 
-/* line 179, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 251, ../Code/Radancy-Test00/scss/styles.scss */
 footer .social img {
   margin-left: 0px;
   margin-right: 5px;
 }
 
-/* line 184, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 256, ../Code/Radancy-Test00/scss/styles.scss */
 footer p {
   font-size: 11.25px;
   line-height: normal;
 }
 
-/* line 189, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 261, ../Code/Radancy-Test00/scss/styles.scss */
 footer a {
   color: inherit;
   text-decoration: underline;
 }
 
-/* line 195, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 267, ../Code/Radancy-Test00/scss/styles.scss */
 footer .privacy-container a {
   font-weight: bolder;
   color: #000;
