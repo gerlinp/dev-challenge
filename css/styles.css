@@ -67,12 +67,18 @@ header img {
 }
 
 /* line 59, ../Code/Radancy-Test00/scss/styles.scss */
-main {
+#main-container {
+  border-bottom: 1px solid var(--brand-color);
+  padding-bottom: 30px;
+}
+
+/* line 62, ../Code/Radancy-Test00/scss/styles.scss */
+#main-container #main-content {
   margin: 20px;
 }
 
-/* line 63, ../Code/Radancy-Test00/scss/styles.scss */
-main .subtitle h2 {
+/* line 65, ../Code/Radancy-Test00/scss/styles.scss */
+#main-container #main-content .subtitle h2 {
   text-align: center;
   font-weight: lighter;
   font-size: 1.65rem;
@@ -80,8 +86,8 @@ main .subtitle h2 {
   margin: 0;
 }
 
-/* line 70, ../Code/Radancy-Test00/scss/styles.scss */
-main .subtitle ::after {
+/* line 72, ../Code/Radancy-Test00/scss/styles.scss */
+#main-container #main-content .subtitle ::after {
   content: '';
   display: block;
   margin: 0 auto;
@@ -90,18 +96,18 @@ main .subtitle ::after {
   border-bottom: 2px solid var(--brand-color);
 }
 
-/* line 82, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 85, ../Code/Radancy-Test00/scss/styles.scss */
 #features p {
   margin: 5px auto;
 }
 
-/* line 85, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 88, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature {
   padding-bottom: 20px;
   border-bottom: 1.5px solid #c2c2c2;
 }
 
-/* line 89, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 92, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature-subtitle {
   color: var(--brand-color);
   font-weight: lighter;
@@ -109,73 +115,77 @@ main .subtitle ::after {
   font-size: 1.35rem;
 }
 
-/* line 95, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 98, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link {
   align-items: center;
   display: flex;
 }
 
-/* line 98, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 101, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link a {
   color: var(--secondary);
   text-decoration: none;
 }
 
-/* line 101, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 104, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link a :visited {
   color: inherit;
 }
 
-/* line 105, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 108, ../Code/Radancy-Test00/scss/styles.scss */
 #features .product-link img {
   margin-left: 5px;
 }
 
-/* line 112, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 115, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about {
   display: flex;
   flex-direction: column;
 }
 
-/* line 116, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 119, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about .top {
   background: var(--brand-color);
   text-align: center;
   color: #fff;
-  line-height: 35px;
-  padding: 15px;
-  font-size: 1.25rem;
+  padding: 12px 7.5px;
+  font-size: 1.3rem;
   font-weight: lighter;
 }
 
-/* line 126, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 128, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about .bottom {
   margin: 0;
   background: var(--highlight-color);
   padding: 0px 10px;
 }
 
-/* line 133, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 135, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers {
+  margin-top: 30px;
   display: flex;
   text-align: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* line 139, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 142, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers p {
+  font-size: 1rem;
   text-align: center;
+  line-height: 30px;
 }
 
-/* line 143, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 148, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-quote {
+  margin: 0;
   position: relative;
   font-style: italic;
   z-index: 2;
+  word-wrap: break-word;
 }
 
-/* line 149, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 156, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-signature {
   position: relative;
   color: #29ae8d;
@@ -183,18 +193,49 @@ main .subtitle ::after {
   z-index: 2;
 }
 
-/* line 156, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 163, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-container {
   position: relative;
-  width: 180px;
+  width: 185px;
 }
 
-/* line 160, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 167, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-symbol {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+/* line 176, ../Code/Radancy-Test00/scss/styles.scss */
+footer {
+  margin: 20px;
+  padding-bottom: 15px;
+}
+
+/* line 179, ../Code/Radancy-Test00/scss/styles.scss */
+footer .social img {
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+/* line 184, ../Code/Radancy-Test00/scss/styles.scss */
+footer p {
+  font-size: 11.25px;
+  line-height: normal;
+}
+
+/* line 189, ../Code/Radancy-Test00/scss/styles.scss */
+footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* line 195, ../Code/Radancy-Test00/scss/styles.scss */
+footer .privacy-container a {
+  font-weight: bolder;
+  color: #000;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
