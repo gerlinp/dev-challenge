@@ -1,6 +1,6 @@
 :root {
   --brand-color: #00945f;
-  --secondary: ;
+  --secondary: #759b24;
 }
 
 * {
@@ -12,6 +12,11 @@ p {
   line-height: 30px;
   text-align: left;
   color: #888888;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn {
@@ -25,13 +30,9 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
-
   a {
     text-decoration: none;
     color: #fff;
-    :visited {
-      color: inherit;
-    }
   }
 }
 
@@ -45,6 +46,14 @@ header {
   }
 }
 
+#hero {
+  width: 100%;
+  height: 200px;
+  background-image: url('../css/images/Layer50.png');
+  background-size: 615px;
+  background-position: 0% 40%;
+}
+
 main {
   margin: 15px;
 
@@ -54,6 +63,7 @@ main {
       font-weight: lighter;
       font-size: 1.65rem;
       color: var(--brand-color);
+      margin: 0;
     }
     ::after {
       content: '';
@@ -66,10 +76,32 @@ main {
   }
 }
 
-#hero {
-  width: 100%;
-  height: 200px;
-  background-image: url('../css/images/Layer50.png');
-  background-size: 615px;
-  background-position: 0% 40%;
+#features {
+  p {
+    margin: 5px auto;
+  }
+  .feature {
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid #c2c2c2;
+  }
+  .feature-subtitle {
+    color: var(--brand-color);
+    font-weight: lighter;
+    margin: 15px 0px;
+    font-size: 1.35rem;
+  }
+  .product-link {
+    align-items: center;
+    display: flex;
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      :visited {
+        color: inherit;
+      }
+    }
+    img {
+      margin-left: 5px;
+    }
+  }
 }
