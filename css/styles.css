@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+/* line 3, ../Code/Radancy-Test00/scss/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, ../Code/Radancy-Test00/scss/styles.scss */
+body {
+  font-family: 'Arial';
+}
+
+/* line 18, ../Code/Radancy-Test00/scss/styles.scss */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 22, ../Code/Radancy-Test00/scss/styles.scss */
+header img {
+  max-width: 62vw;
+  margin: 25px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
