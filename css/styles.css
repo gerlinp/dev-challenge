@@ -1,24 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
-/* line 3, ../Code/Radancy-Test00/scss/styles.scss */
-* {
-  box-sizing: border-box;
+/* line 1, ../Code/Radancy-Test00/scss/styles.scss */
+:root {
+  --brand-color: #00945f;
+  --secondary: ;
 }
 
-/* line 7, ../Code/Radancy-Test00/scss/styles.scss */
-body {
+/* line 6, ../Code/Radancy-Test00/scss/styles.scss */
+* {
+  box-sizing: border-box;
   font-family: 'Arial';
 }
 
-/* line 18, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 11, ../Code/Radancy-Test00/scss/styles.scss */
+p {
+  line-height: 30px;
+  text-align: left;
+  color: #888888;
+}
+
+/* line 17, ../Code/Radancy-Test00/scss/styles.scss */
+.btn {
+  display: flex;
+  width: 155px;
+  text-align: center;
+  background: #e97300;
+  color: #fff;
+  margin: 50px auto;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+/* line 29, ../Code/Radancy-Test00/scss/styles.scss */
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 32, ../Code/Radancy-Test00/scss/styles.scss */
+.btn a :visited {
+  color: inherit;
+}
+
+/* line 38, ../Code/Radancy-Test00/scss/styles.scss */
 header {
   display: flex;
   justify-content: center;
 }
 
-/* line 22, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 42, ../Code/Radancy-Test00/scss/styles.scss */
 header img {
   max-width: 62vw;
   margin: 25px 0;
+}
+
+/* line 48, ../Code/Radancy-Test00/scss/styles.scss */
+main {
+  margin: 15px;
+}
+
+/* line 52, ../Code/Radancy-Test00/scss/styles.scss */
+main .subtitle h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.65rem;
+  color: var(--brand-color);
+}
+
+/* line 58, ../Code/Radancy-Test00/scss/styles.scss */
+main .subtitle ::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  padding-top: 15px;
+  border-bottom: 2px solid var(--brand-color);
+}
+
+/* line 69, ../Code/Radancy-Test00/scss/styles.scss */
+#hero {
+  width: 100%;
+  height: 200px;
+  background-image: url("../css/images/Layer50.png");
+  background-size: 615px;
+  background-position: 0% 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */
