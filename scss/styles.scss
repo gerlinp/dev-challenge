@@ -72,18 +72,13 @@ header {
   background-image: url('../css/images/hero.png');
   background-size: 615px;
   background-position: 0% 40%;
+  margin-bottom: 20px;
 
   @media (min-width: 767px) {
     height: 450px;
     background-size: cover;
     background-image: url('../css/images/hero-desktop.png');
   }
-
-  //   @media (min-width: 1280px) {
-  //     height: 450px;
-  //     background-size: cover;
-  //     background-image: url('../css/images/hero-desktop.png');
-  //   }
 }
 
 // -------------------- Main ----------------//
@@ -98,7 +93,7 @@ header {
       h2 {
         text-align: center;
         font-weight: lighter;
-        font-size: 1.65rem;
+        font-size: 1.5rem;
         color: var(--brand-color);
         margin: 0;
       }
@@ -218,6 +213,10 @@ header {
       line-height: 30px;
     }
 
+    .officer img {
+      margin-bottom: 10px;
+    }
+
     .officer-quote {
       margin: 0;
       position: relative;
@@ -245,7 +244,7 @@ header {
       z-index: 1;
     }
 
-    @media (min-width: 320px) {
+    @media (min-width: 350px) {
       .quote-container {
         width: 100%;
         max-width: 500px;
