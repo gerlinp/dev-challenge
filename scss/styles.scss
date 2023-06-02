@@ -72,6 +72,7 @@ header {
   background-image: url('../css/images/hero.png');
   background-size: 615px;
   background-position: 0% 40%;
+  margin-bottom: 20px;
 
   @media (min-width: 767px) {
     height: 450px;
@@ -92,7 +93,7 @@ header {
       h2 {
         text-align: center;
         font-weight: lighter;
-        font-size: 1.65rem;
+        font-size: 1.5rem;
         color: var(--brand-color);
         margin: 0;
       }
@@ -206,26 +207,14 @@ header {
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-
-    @media (min-width: 1024px) {
-      flex-direction: row;
-      justify-content: space-around;
-
-      .officer-variant {
-        .quote-container {
-          width: 400px;
-        }
-        .officer-signature {
-          margin: 16px auto;
-          width: 185px;
-        }
-      }
-    }
-
     p {
       font-size: 1rem;
       text-align: center;
       line-height: 30px;
+    }
+
+    .officer img {
+      margin-bottom: 10px;
     }
 
     .officer-quote {
@@ -253,6 +242,32 @@ header {
       top: 0;
       left: 0;
       z-index: 1;
+    }
+
+    @media (min-width: 350px) {
+      .quote-container {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-around;
+
+      .quote-container {
+        width: 185px;
+      }
+
+      .officer-variant {
+        .quote-container {
+          width: 400px;
+        }
+        .officer-signature {
+          margin: 16px auto;
+          width: 185px;
+        }
+      }
     }
   }
 }
