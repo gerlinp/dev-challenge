@@ -226,31 +226,14 @@ header img {
   flex-wrap: wrap;
 }
 
-@media (min-width: 1024px) {
-  /* line 207, ../Code/Radancy-Test00/scss/styles.scss */
-  #solutions #officers {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  /* line 221, ../Code/Radancy-Test00/scss/styles.scss */
-  #solutions #officers .officer-variant .quote-container {
-    width: 400px;
-  }
-  /* line 224, ../Code/Radancy-Test00/scss/styles.scss */
-  #solutions #officers .officer-variant .officer-signature {
-    margin: 16px auto;
-    width: 185px;
-  }
-}
-
-/* line 231, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 215, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers p {
   font-size: 1rem;
   text-align: center;
   line-height: 30px;
 }
 
-/* line 237, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 221, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-quote {
   margin: 0;
   position: relative;
@@ -259,7 +242,7 @@ header img {
   word-wrap: break-word;
 }
 
-/* line 245, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 229, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-signature {
   position: relative;
   color: #29ae8d;
@@ -267,13 +250,13 @@ header img {
   z-index: 2;
 }
 
-/* line 252, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 236, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-container {
   position: relative;
   width: 185px;
 }
 
-/* line 257, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 241, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-symbol {
   position: absolute;
   top: 0;
@@ -281,31 +264,60 @@ header img {
   z-index: 1;
 }
 
-/* line 268, ../Code/Radancy-Test00/scss/styles.scss */
+@media (min-width: 320px) {
+  /* line 249, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers .quote-container {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 207, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  /* line 259, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers .quote-container {
+    width: 185px;
+  }
+  /* line 264, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers .officer-variant .quote-container {
+    width: 400px;
+  }
+  /* line 267, ../Code/Radancy-Test00/scss/styles.scss */
+  #solutions #officers .officer-variant .officer-signature {
+    margin: 16px auto;
+    width: 185px;
+  }
+}
+
+/* line 278, ../Code/Radancy-Test00/scss/styles.scss */
 footer {
   margin: 20px;
   padding-bottom: 15px;
 }
 
-/* line 272, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 282, ../Code/Radancy-Test00/scss/styles.scss */
 footer .social img {
   margin-left: 0px;
   margin-right: 5px;
 }
 
-/* line 277, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 287, ../Code/Radancy-Test00/scss/styles.scss */
 footer p {
   font-size: 11.25px;
   line-height: normal;
 }
 
-/* line 282, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 292, ../Code/Radancy-Test00/scss/styles.scss */
 footer a {
   color: inherit;
   text-decoration: underline;
 }
 
-/* line 288, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 298, ../Code/Radancy-Test00/scss/styles.scss */
 footer .privacy-container a {
   font-weight: bolder;
   color: #000;

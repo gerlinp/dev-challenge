@@ -212,22 +212,6 @@ header {
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-
-    @media (min-width: 1024px) {
-      flex-direction: row;
-      justify-content: space-around;
-
-      .officer-variant {
-        .quote-container {
-          width: 400px;
-        }
-        .officer-signature {
-          margin: 16px auto;
-          width: 185px;
-        }
-      }
-    }
-
     p {
       font-size: 1rem;
       text-align: center;
@@ -259,6 +243,32 @@ header {
       top: 0;
       left: 0;
       z-index: 1;
+    }
+
+    @media (min-width: 320px) {
+      .quote-container {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-around;
+
+      .quote-container {
+        width: 185px;
+      }
+
+      .officer-variant {
+        .quote-container {
+          width: 400px;
+        }
+        .officer-signature {
+          margin: 16px auto;
+          width: 185px;
+        }
+      }
     }
   }
 }
