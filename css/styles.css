@@ -90,18 +90,18 @@ header img {
   }
 }
 
-/* line 84, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 90, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container {
   border-bottom: 1px solid var(--brand-color);
   padding-bottom: 30px;
 }
 
-/* line 88, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 94, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container #main-content {
   margin: 20px;
 }
 
-/* line 92, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 98, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container #main-content .subtitle h2 {
   text-align: center;
   font-weight: lighter;
@@ -110,7 +110,7 @@ header img {
   margin: 0;
 }
 
-/* line 99, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 105, ../Code/Radancy-Test00/scss/styles.scss */
 #main-container #main-content .subtitle ::after {
   content: '';
   display: block;
@@ -120,18 +120,18 @@ header img {
   border-bottom: 2px solid var(--brand-color);
 }
 
-/* line 114, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 120, ../Code/Radancy-Test00/scss/styles.scss */
 #features p {
   margin: 5px auto;
 }
 
-/* line 118, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 124, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature {
   padding-bottom: 20px;
   border-bottom: 1.5px solid #c2c2c2;
 }
 
-/* line 123, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 129, ../Code/Radancy-Test00/scss/styles.scss */
 #features .feature-subtitle {
   color: var(--brand-color);
   font-weight: lighter;
@@ -139,7 +139,7 @@ header img {
   font-size: 1.35rem;
 }
 
-/* line 130, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 136, ../Code/Radancy-Test00/scss/styles.scss */
 #features a.product-link {
   align-items: center;
   display: flex;
@@ -147,29 +147,29 @@ header img {
   text-decoration: none;
 }
 
-/* line 136, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 142, ../Code/Radancy-Test00/scss/styles.scss */
 #features a.product-link img {
   margin-left: 5px;
 }
 
 @media (min-width: 1023px) {
-  /* line 142, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 148, ../Code/Radancy-Test00/scss/styles.scss */
   #features .features-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
-  /* line 148, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 154, ../Code/Radancy-Test00/scss/styles.scss */
   #features .feature {
     border: none;
     position: relative;
     margin-top: 35px;
   }
-  /* line 152, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 158, ../Code/Radancy-Test00/scss/styles.scss */
   #features .feature p {
     margin: 0px 10px 50px 0px;
   }
-  /* line 156, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 162, ../Code/Radancy-Test00/scss/styles.scss */
   #features .feature:nth-child(odd)::after {
     content: '';
     position: absolute;
@@ -179,19 +179,19 @@ header img {
     width: 1px;
     background-color: var(--border);
   }
-  /* line 165, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 171, ../Code/Radancy-Test00/scss/styles.scss */
   #features .feature:nth-child(even) {
     margin-left: 20px;
   }
 }
 
-/* line 175, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 181, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about {
   display: flex;
   flex-direction: column;
 }
 
-/* line 179, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 185, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about .top {
   background: var(--brand-color);
   text-align: center;
@@ -201,7 +201,7 @@ header img {
   font-weight: lighter;
 }
 
-/* line 188, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 194, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #solutions-about .bottom {
   margin: 0;
   background: var(--highlight-color);
@@ -209,13 +209,13 @@ header img {
 }
 
 @media (min-width: 768px) {
-  /* line 188, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 194, ../Code/Radancy-Test00/scss/styles.scss */
   #solutions #solutions-about .bottom {
     padding: 0px 50px;
   }
 }
 
-/* line 201, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 207, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers {
   margin-top: 30px;
   display: flex;
@@ -227,30 +227,30 @@ header img {
 }
 
 @media (min-width: 1024px) {
-  /* line 201, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 207, ../Code/Radancy-Test00/scss/styles.scss */
   #solutions #officers {
     flex-direction: row;
     justify-content: space-around;
   }
-  /* line 215, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 221, ../Code/Radancy-Test00/scss/styles.scss */
   #solutions #officers .officer-variant .quote-container {
     width: 400px;
   }
-  /* line 218, ../Code/Radancy-Test00/scss/styles.scss */
+  /* line 224, ../Code/Radancy-Test00/scss/styles.scss */
   #solutions #officers .officer-variant .officer-signature {
     margin: 16px auto;
     width: 185px;
   }
 }
 
-/* line 225, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 231, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers p {
   font-size: 1rem;
   text-align: center;
   line-height: 30px;
 }
 
-/* line 231, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 237, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-quote {
   margin: 0;
   position: relative;
@@ -259,7 +259,7 @@ header img {
   word-wrap: break-word;
 }
 
-/* line 239, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 245, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .officer-signature {
   position: relative;
   color: #29ae8d;
@@ -267,13 +267,13 @@ header img {
   z-index: 2;
 }
 
-/* line 246, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 252, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-container {
   position: relative;
   width: 185px;
 }
 
-/* line 251, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 257, ../Code/Radancy-Test00/scss/styles.scss */
 #solutions #officers .quote-symbol {
   position: absolute;
   top: 0;
@@ -281,31 +281,31 @@ header img {
   z-index: 1;
 }
 
-/* line 262, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 268, ../Code/Radancy-Test00/scss/styles.scss */
 footer {
   margin: 20px;
   padding-bottom: 15px;
 }
 
-/* line 266, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 272, ../Code/Radancy-Test00/scss/styles.scss */
 footer .social img {
   margin-left: 0px;
   margin-right: 5px;
 }
 
-/* line 271, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 277, ../Code/Radancy-Test00/scss/styles.scss */
 footer p {
   font-size: 11.25px;
   line-height: normal;
 }
 
-/* line 276, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 282, ../Code/Radancy-Test00/scss/styles.scss */
 footer a {
   color: inherit;
   text-decoration: underline;
 }
 
-/* line 282, ../Code/Radancy-Test00/scss/styles.scss */
+/* line 288, ../Code/Radancy-Test00/scss/styles.scss */
 footer .privacy-container a {
   font-weight: bolder;
   color: #000;
